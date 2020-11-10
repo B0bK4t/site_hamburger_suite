@@ -5,12 +5,12 @@
   background: #21717E;
 }
 
-.intro .logo{
+.intro .logo {
   width: 130px;
 
 }
 
-.intro h1{
+.intro h1 {
   margin: 0;
 
   font-family: 'Anton', sans-serif;
@@ -19,6 +19,30 @@
   text-transform: uppercase;
 }
 
-.intro h1 span{
+.intro h1 span {
   display: block;
+}
+
+.sub-intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .main-title {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+
+    &::after {
+      display: block;
+      width: 100%;
+      content: "";
+      height: 10px;
+      background: var(--color-text-primary);
+    }
+  }
+
+  .sub-title {
+    margin: 0;
+  }
 }
