@@ -20,4 +20,9 @@
     text-transform: none;
     display: block;
   }
+
+  .thumb img {
+    object-fit: cover;
+    height: 100%;
+  }
 }
